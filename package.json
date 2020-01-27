@@ -1,0 +1,41 @@
+{
+  "name": "coding-challenge-typescript",
+  "version": "1.0.0",
+  "description": "List of coding challenge questions with my solutions using typescript.",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": " mocha -R spec -r ts-node/register 'src/**/*.test.ts' -s 0",
+    "test:watch": "npm run test -- --watch-extensions ts -w",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && tsc --p tsconfig.deploy.json",
+    "build:watch": "npm run build -- -w",
+    "lint": "tslint src/**/*.ts -t verbose",
+    "install:update": "rm -rf ./node_modules && npm i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shawnkoon/coding-challenge-typescript.git"
+  },
+  "author": {
+    "name": "shawnkoon",
+    "url": "https://github.com/shawnkoon"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/shawnkoon/coding-challenge-typescript/issues"
+  },
+  "homepage": "https://github.com/shawnkoon/coding-challenge-typescript#readme",
+  "dependencies": {
+    "ts-node": "8.3.0",
+    "tslint": "5.9.1",
+    "typescript": "^3.3.3333"
+  },
+  "devDependencies": {
+    "@types/chai": "4.1.4",
+    "@types/lodash": "4.14.131",
+    "@types/mocha": "5.2.6",
+    "chai": "4.1.2",
+    "lodash": "4.17.15",
+    "mocha": "6.1.4"
+  }
+}
