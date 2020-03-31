@@ -27,5 +27,6 @@ import { LinkedList, NodeType } from 'datastructures/linked-list';
  * getMidPoint(list); // returns { data: 'b', next: {...} }
  */
 export const getMidPoint = (list: LinkedList): NodeType => {
-
+  console.log(list);
+  return {} as NodeType;
 };

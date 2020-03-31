@@ -42,7 +42,7 @@ export class LinkedList {
   }
 
   public getLast(): NodeType {
-    
+    return {} as NodeType;
   }
 
   public clear(): void {
